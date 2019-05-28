@@ -1,0 +1,21 @@
+.price-list {
+  padding: 20px 100px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.07);
+  background: #fff;
+}
+
+h2 {
+  color: hsl(280, 15%, 30%);
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  padding: 10px;
+  color: hsl(280, 15%, 30%);
+}
+
+.highlight {
+  background: hsl(280, 80%, 90%);
+}
