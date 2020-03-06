@@ -10,7 +10,7 @@ class App extends React.Component {
   componentDidMount() {
     axios
       .get("https://vigilant-wing-f244c1.netlify.com/.netlify/functions/index")
-      .then(res => this.setState({ res }));
+      .then(res => this.setState({ res: JSON.stringify(res) }));
   }
 
   fetchPrices = async (startDate, endDate) => {

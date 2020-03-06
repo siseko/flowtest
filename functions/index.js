@@ -9,7 +9,12 @@ exports.handler = function(event, context, callback) {
     .then(json => {
       callback(null, {
         statusCode: 200,
-        body: JSON.stringify(json.data)
+        body: JSON.stringify(json.data),
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Headers":
+            "Origin, X-Requested-With, Content-Type, Accept"
+        }
       });
     })
     .catch(ex => callback(ex));
