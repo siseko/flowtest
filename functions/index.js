@@ -20,18 +20,18 @@ fs.readdir(directoryPath, function(err, files) {
 
 exports.handler = function(event, context, callback) {
   let file;
-  if (event.path.includes("Categories")) {
-    file = fs.readFileSync("./files/categories.json");
-  }
-
-  // if (event.path.includes("Games")) {
-  //   file = fs.readFileSync("./games");
+  // if (event.path.includes("Categories")) {
+  //   file = fs.readFileSync("./files/categories.json");
   // }
 
-  // if (event.path.includes("Launch")) {
-  //   file = fs.readFileSync("./launch");
-  // }
-  console.log("-->", file, file.toString());
+  // // if (event.path.includes("Games")) {
+  // //   file = fs.readFileSync("./games");
+  // // }
+
+  // // if (event.path.includes("Launch")) {
+  // //   file = fs.readFileSync("./launch");
+  // // }
+  // console.log("-->", file, file.toString());
   callback(null, {
     statusCode: 200,
     body: "Testing",
