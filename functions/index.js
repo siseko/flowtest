@@ -19,7 +19,7 @@ exports.handler = async function(event, context, callback) {
   console.log("-->", process.env);
   callback(null, {
     statusCode: 200,
-    body: file,
+    body: JSON.stringify(file),
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers":
