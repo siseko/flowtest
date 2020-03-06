@@ -1,11 +1,11 @@
-const fs = require("fs");
+const axios = require("axios");
 
 console.log("Testing");
 const basePath = "https://vigilant-wing-f244c1.netlify.com/files";
-exports.handler = function(event, context, callback) {
+exports.handler = async function(event, context, callback) {
   let file;
   if (event.path.includes("Categories")) {
-    file = fs.readFileSync(`${basePath}/categories.json`);
+    file = await axios.get(`${basePath}/categories.json`);
   }
 
   // if (event.path.includes("Games")) {
