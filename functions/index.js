@@ -4,7 +4,6 @@ const basePath = "https://vigilant-wing-f244c1.netlify.com/files";
 exports.handler = async function(event, context, callback) {
   let file;
 
-  console.log(event.path);
   if (event.path.includes("Categories")) {
     file = await axios.get(`${basePath}/categories.json`);
   }
