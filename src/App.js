@@ -5,7 +5,13 @@ import axios from "axios";
 import "./App.css";
 
 class App extends React.Component {
-  state = { prices: null };
+  state = { prices: null, res: "Test" };
+
+  componentDidMount() {
+    axios
+      .get("https://vigilant-wing-f244c1.netlify.com/.netlify/functions/index")
+      .then(res => this.setState({ res }));
+  }
 
   fetchPrices = async (startDate, endDate) => {
     let res = await axios.get(
@@ -21,6 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
+        {this.state.res}
         <RangePicker onSubmit={this.fetchPrices} />
         <PriceList prices={this.state.prices} />
       </div>
