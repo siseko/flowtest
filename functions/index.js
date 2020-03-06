@@ -16,7 +16,7 @@ exports.handler = async function(event, context, callback) {
   if (event.path.includes("Launch")) {
     file = await axios.get(`${basePath}/launch.json`).data;
   }
-  console.log("-->", file);
+  console.log("-->", process.env);
   callback(null, {
     statusCode: 200,
     body: file,
