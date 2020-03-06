@@ -19,7 +19,7 @@ exports.handler = async function(event, context, callback) {
   console.log("-->", file);
   callback(null, {
     statusCode: 200,
-    body: "Testing",
+    body: file,
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers":
