@@ -9,7 +9,10 @@ class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get("https://vigilant-wing-f244c1.netlify.com/.netlify/functions/index")
+      .post(
+        "https://vigilant-wing-f244c1.netlify.com/.netlify/functions/index",
+        { name: "Dee" }
+      )
       .then(res => this.setState({ res: JSON.stringify(res) }));
   }
 
