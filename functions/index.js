@@ -3,6 +3,7 @@ const axios = require("axios");
 console.log("Testing");
 
 exports.handler = function(event, context, callback) {
+  // console.log("-->", JSON.stringify(event), JSON.stringify(context));
   axios
     .get("https://randomuser.me/api/")
     .then(json => {
