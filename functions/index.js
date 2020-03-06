@@ -6,20 +6,20 @@ exports.handler = async function(event, context, callback) {
 
   console.log(event.path);
   if (event.path.includes("Categories")) {
-    file = await axios.get(`${basePath}/categories.json`).data;
+    file = await axios.get(`${basePath}/categories.json`);
   }
 
   if (event.path.includes("Games")) {
-    file = await axios.get(`${basePath}/games.json`).data;
+    file = await axios.get(`${basePath}/games.json`);
   }
 
   if (event.path.includes("Launch")) {
-    file = await axios.get(`${basePath}/launch.json`).data;
+    file = await axios.get(`${basePath}/launch.json`);
   }
-  console.log("-->", process.env);
+  console.log("-->", file.data);
   callback(null, {
     statusCode: 200,
-    body: JSON.stringify(file),
+    body: JSON.stringify(file.data),
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers":
