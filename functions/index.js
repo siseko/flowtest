@@ -1,8 +1,15 @@
-exports.handler = async event => {
-  const subject = event.queryStringParameters.name || "World";
-  console.log("Dee is 36");
-  return {
-    statusCode: 200,
-    body: `Hello ${subject}!`
-  };
+const axios = require("axios");
+
+console.log("Testing");
+
+exports.handler = function(event, context, callback) {
+  axios
+    .get("https://randomuser.me/api/")
+    .then(json => {
+      callback(null, {
+        statusCode: 200,
+        body: JSON.stringify(json)
+      });
+    })
+    .catch(ex => callback(ex));
 };
