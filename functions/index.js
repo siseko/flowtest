@@ -1,21 +1,10 @@
-const axios = require("axios");
+const fs = require("fs");
 
 console.log("Testing");
 
 exports.handler = function(event, context, callback) {
-  console.log("-->", JSON.stringify(event), "\n", event);
-  axios
-    .get("https://randomuser.me/api/")
-    .then(json => {
-      callback(null, {
-        statusCode: 200,
-        body: JSON.stringify(json.data),
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Headers":
-            "Origin, X-Requested-With, Content-Type, Accept"
-        }
-      });
-    })
-    .catch(ex => callback(ex));
+  console.log(event.path);
+  return {
+    body: "Testing"
+  };
 };
