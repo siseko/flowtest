@@ -3,8 +3,18 @@ const fs = require("fs");
 console.log("Testing");
 
 exports.handler = function(event, context, callback) {
-  console.log("-->", event.path.includes("Categories"));
-  const file = fs.readFileSync("./categories");
+  let file;
+  if (event.path.includes("Categories")) {
+    file = fs.readFileSync("./categories.json");
+  }
+
+  // if (event.path.includes("Games")) {
+  //   file = fs.readFileSync("./games");
+  // }
+
+  // if (event.path.includes("Launch")) {
+  //   file = fs.readFileSync("./launch");
+  // }
   console.log("-->", file, file.toString());
   callback(null, {
     statusCode: 200,
