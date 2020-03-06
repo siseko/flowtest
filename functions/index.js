@@ -5,7 +5,7 @@ console.log("Testing");
 exports.handler = function(event, context, callback) {
   let file;
   if (event.path.includes("Categories")) {
-    file = fs.readFileSync("./categories.json");
+    file = fs.readFileSync("./functions/categories.json");
   }
 
   // if (event.path.includes("Games")) {
