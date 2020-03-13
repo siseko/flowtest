@@ -144,19 +144,6 @@
       "GC": 8
     },
     {
-      "GCId": "5e95eb87-c4a5-4b1b-b027-5b1c2068251c",
-      "PGCId": null,
-      "GCN": "Casino en vivo",
-      "GCD": "Casino en vivo",
-      "ND": "1",
-      "NR": "6",
-      "GCO": 30,
-      "NP": "/Live Casino (P)",
-      "IsFav": false,
-      "IsFeat": false,
-      "GC": 16
-    },
-    {
       "GCId": "e7c2387a-c75f-417c-b964-c7abae959cdb",
       "PGCId": null,
       "GCN": "Juegos progresivos",
@@ -181,19 +168,6 @@
       "IsFav": false,
       "IsFeat": false,
       "GC": 5
-    },
-    {
-      "GCId": "6b4352b4-59d9-4651-83d6-7bdce3ebc64e",
-      "PGCId": null,
-      "GCN": "Vegas",
-      "GCD": "Vegas",
-      "ND": "1",
-      "NR": "10",
-      "GCO": 90,
-      "NP": "/Vegas (P)",
-      "IsFav": false,
-      "IsFeat": false,
-      "GC": 201
     },
     {
       "GCId": "6e940028-7500-4d7b-b7fb-19b07aac2fb2",
