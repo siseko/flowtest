@@ -1,0 +1,85 @@
+[
+  {
+    "Gid": "cb5e1046-f5a4-4342-963b-77f7610d43d3",
+    "GN": "Mega Moolah",
+    "GCId": "0790e4d3-74a8-47f2-b255-a22496d8681f",
+    "GPCId": null,
+    "LTI": "/Game/Thumbnail/BWL_defaultLarge.jpg",
+    "TI": "/Game/Thumbnail/MegaMoolah_295x215.jpg",
+    "IsW": true,
+    "IsF": true,
+    "IsOP": true,
+    "Heat": 0,
+    "HF": false,
+    "IsN": false,
+    "LBGId": 449,
+    "BI": "/Game/Overlay/bg_GameSpecific_MegaMoolah.jpg",
+    "PParams": {
+      "ProgressiveId": "17501_101",
+      "ValueIncrement": 1.0,
+      "IncrementTime": 1,
+      "JackpotValue": 9469744.85
+    }
+  },
+  {
+    "Gid": "3e831703-c05d-485e-9f1d-2ef88f9169c7",
+    "GN": "Wheel of Wishes",
+    "GCId": "0790e4d3-74a8-47f2-b255-a22496d8681f",
+    "GPCId": null,
+    "LTI": "/Game/Thumbnail/BWL_defaultLarge.jpg",
+    "TI": "/Game/Thumbnail/WheelOfWishes_295x215.jpg",
+    "IsW": true,
+    "IsF": true,
+    "IsOP": true,
+    "Heat": 0,
+    "HF": false,
+    "IsN": true,
+    "LBGId": 2129,
+    "BI": "/Game/Overlay/WheelOfWishes_GameSpecificBackground.jpg",
+    "PParams": {
+      "ProgressiveId": "15041_128",
+      "ValueIncrement": 1.0,
+      "IncrementTime": 1,
+      "JackpotValue": 2216247.25
+    }
+  },
+  {
+    "Gid": "c09389fc-8831-43f9-ba8b-ac070486136b",
+    "GN": "Atlantean Treasures",
+    "GCId": "0790e4d3-74a8-47f2-b255-a22496d8681f",
+    "GPCId": null,
+    "LTI": "/Game/Thumbnail/BWL_defaultLarge.jpg",
+    "TI": "/Game/Thumbnail/AtlanteanTreasures_295x215.jpg",
+    "IsW": true,
+    "IsF": true,
+    "IsOP": true,
+    "Heat": 0,
+    "HF": false,
+    "IsN": true,
+    "LBGId": 2132,
+    "BI": "/Game/Overlay/AtlanteanTreasures_GameSpecificBackground.jpg",
+    "PParams": {
+      "ProgressiveId": "15042_101",
+      "ValueIncrement": 1.0,
+      "IncrementTime": 1,
+      "JackpotValue": 9469744.85
+    }
+  },
+  {
+    "Gid": "f897f148-823b-4206-85a8-a0e73d57aa80",
+    "GN": "Wonder Woods",
+    "GCId": "0790e4d3-74a8-47f2-b255-a22496d8681f",
+    "GPCId": null,
+    "LTI": "/Game/Thumbnail/BWL_defaultLarge.jpg",
+    "TI": "/Game/Thumbnail/WonderWoods_295x215.jpg",
+    "IsW": true,
+    "IsF": true,
+    "IsOP": true,
+    "Heat": 0,
+    "HF": true,
+    "IsN": true,
+    "LBGId": 2131,
+    "BI": "/Game/Overlay/WonderWoods_GameSpecificBackground.jpg",
+    "PParams": null
+  }
+]

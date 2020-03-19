@@ -8,6 +8,10 @@ exports.handler = async function(event, context, callback) {
     file = await axios.get(`${basePath}/categories.json`);
   }
 
+  if (event.path.includes("Search")) {
+    file = await axios.get(`${basePath}/games-search.json`);
+  }
+
   if (event.path.includes("Games")) {
     file = await axios.get(`${basePath}/games.json`);
   }
