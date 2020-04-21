@@ -26,6 +26,7 @@ exports.handler = async function(event, context, callback) {
     body: JSON.stringify(file.data),
     headers: {
       "Access-Control-Allow-Origin": "*, http://localhost:4200",
+      "Access-Control-Allow-Methods": "*",
       "Access-Control-Allow-Headers":
         "Origin, X-Requested-With, Content-Type, Accept"
     }
