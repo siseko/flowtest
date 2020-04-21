@@ -2,18 +2,6 @@ const axios = require("axios");
 
 const basePath = "https://vigilant-wing-f244c1.netlify.com/files";
 exports.handler = async function(event, context, callback) {
-  if (event.httpMethod === "OPTIONS") {
-    return callback(null, {
-      statusCode: 204,
-      headers: {
-        "Access-Control-Allow-Origin": "*, http://localhost:4200",
-        "Access-Control-Allow-Methods": "*",
-        "Access-Control-Allow-Headers":
-          "Origin, X-Requested-With, Content-Type, Accept"
-      }
-    });
-  }
-
   let file;
 
   if (event.path.includes("Categories")) {
@@ -36,8 +24,7 @@ exports.handler = async function(event, context, callback) {
     statusCode: 200,
     body: JSON.stringify(file.data),
     headers: {
-      "Access-Control-Allow-Origin": "*, http://localhost:4200",
-      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers":
         "Origin, X-Requested-With, Content-Type, Accept"
     }
