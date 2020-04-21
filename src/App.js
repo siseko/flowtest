@@ -30,7 +30,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        {this.state.res}
         <RangePicker onSubmit={this.fetchPrices} />
         <PriceList prices={this.state.prices} />
       </div>
